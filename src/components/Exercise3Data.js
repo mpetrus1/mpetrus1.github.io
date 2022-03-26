@@ -21,12 +21,12 @@ const Exercise3Data=(props)=>{
         }
 
         const fetchData = async () => {
-            //const response = await fetch('https://opendata.aemet.es/opendata/sh/f1a62a75');
+            const response = await fetch('https://opendata.aemet.es/opendata/sh/f1a62a75');
             let apiHeader ={
                 api_key: 'BzWaJcjfSy8mRfnZNdE6GfFrDwAG7h0J',
                 mode:"cors",
             }
-            const response = await fetch ('http://dataservice.accuweather.com/currentconditions/v1/305482',apiHeader)
+            //const response = await fetch ('http://dataservice.accuweather.com/currentconditions/v1/305482',apiHeader)
             const currentData = await response.json();
             console.log("Aqui estan los datos del fetch: " + currentData);
             setData(currentData);
