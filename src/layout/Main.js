@@ -1,6 +1,6 @@
 import { Hero } from "../components/Hero";
-import Exercise2Image from "../components/Exercise2Image";
-import Exercise3Data from "../components/Exercise3Data";
+import AirportImage from "../components/AirportImage";
+import Temps from "../components/Temps";
 import React, {useContext} from "react";
 import {AppContext} from "../AppContextProvider";
 
@@ -15,10 +15,10 @@ export default function Main(){
             renderingPart = <Hero/>
             break;
         case 2:
-            renderingPart = <Exercise2Image/>
+            renderingPart = <AirportImage/>
             break;
         case 3:
-            renderingPart = <Exercise3Data/>
+            renderingPart = <Temps/>
             break;
         default:
             renderingPart = "No state associated"
